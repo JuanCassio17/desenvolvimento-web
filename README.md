@@ -1,2 +1,1 @@
-# javascript
-Repositório para praticar JS
+Repositório para praticar HTML, CSS e JS
