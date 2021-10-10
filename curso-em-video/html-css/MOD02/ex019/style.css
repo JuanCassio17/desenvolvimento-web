@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+*/
+
+body{
+    background-color: rgb(204, 204, 223);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+h1#principal{
+    /* aqui eu posso dar características únicas e
+    exclusivamente para meu <h1 id="principal"> */
+    color: black;
+    background-color: rgb(109, 216, 136);
+    text-align: center;
+    font-family: monospace;
+    font-size: 35px;
+    text-decoration: underline;
+
+
+
+}
+
+h1{
+    color:rgb(119, 15, 72) ;
+
+}
+
+h2{
+    color: rgb(56, 94, 25);
+
+}
+
+p{
+    text-align: justify;
+}
+
