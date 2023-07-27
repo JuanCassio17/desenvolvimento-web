@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco de CSS</title>
+    <style>
+        h1 {
+            font-size: 20px;
+            /* background-color: red; */
+            /* display: none; Sumir elementos da página dentro da tag*/
+            /* position: absolute; Atributo para o elemento ocupar todo espaço em tela*/
+            /* top: 400px; Localização do elemento na página no topo*/
+            /* left: 400px; Localização do elemento na página à esquerda*/
+        }
+
+        .fundo-vermelho {
+            background-color: red;
+
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        #texto-principal {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <!--O id deve ser único dentro da página-->
+    <!--A classe é mais utilizado para estilos-->
+
+    <!--o document.querySelector pode encontrar vários atributos nos parâmetros das tags-->
+    <!-- document.querySelector('[wm-atrib]') *Atributos personalizados. Recomendado para manipulação em JS* -->
+    <!-- document.querySelector('.fundo-vermelho') -->
+    <!-- document.querySelector('.negrito') -->
+
+    <h1>CSS</h1>
+    <span id="texto-principal">Texto 1</span>
+    <span class="fundo-vermelho" wm-atrib>Texto 2</span>
+    <span class="fundo-vermelho negrito">Texto 3</span>
+</body>
+
+</html>
