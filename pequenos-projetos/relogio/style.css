@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(230, 187, 255);
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.container-horas{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time-divs {
+    display: flex;
+}
+
+.horas-div, .minutos-div, .segundos-div {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#horas, #minutos, #segundos {
+    font-size: 80px;
+}
+
+p {
+    font-size: 20px;
+}
