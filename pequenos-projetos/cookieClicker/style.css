@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(102, 0, 255, 0.225);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.cookie{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie h2 {
+    font-size: 2.2em;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.cookie img {
+    width: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cookie img:hover{
+    width: 310px;
+}
+
+.loja-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.loja {
+    width: 300px;
+    background-color: rgb(54, 86, 142);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.loja p{
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.loja img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: solid rgb(255, 255, 255) 2px;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.5s;
+    opacity: 50%;
+}
+
+.loja img:hover {
+    background-color: rgb(194, 239, 182);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 130, 130, 0.522);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#buttonReiniciar {
+    margin: 20px;
+    padding: 10px;
+    width: 10%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#buttonReiniciar:hover{
+    background-color: rgb(227, 227, 227);
+    padding: 20px;
+}
+
