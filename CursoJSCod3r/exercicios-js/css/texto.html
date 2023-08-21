@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        /* ... */
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            /* valores padrões */
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+
+            /* valores absolutos */
+            font-size: 100px; /* tamanho do pixel é relativo */
+            font-size: 72pt; /* pontos */
+            font-size: 1in; /* polegadas */
+
+            /* valores relativos */
+            font-size: 2.2em;
+            font-size: 2.2rem;
+            font-size: 50vh;
+            font-size: 10vw;
+
+            font-size: 50px;
+            
+            font-family: monospace;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Indie flower', cursive;
+
+            font-weight: 900;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            /* text-decoration: overline underline line-through; */
+            word-spacing: 10px; /* espaço entre as palavras ao lado */
+            letter-spacing: 20px; /* espaço entre as letras */
+            line-height: 10px; /* espaço entre as palavras em linhas */
+            text-align: center;
+        }
+
+        .botao {
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .destaque {
+            color: #fff;
+            background: tomato;
+            box-shadow: 2px 2px 1px 1px black;
+        }
+
+        .destaque:active { /* ao clicar */
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Que texto
+            <br>legal!!!
+        </p>
+    </div>
+    <a href="http://google.com" class="botao destaque">Google</a>
+</body>
+
+</html>

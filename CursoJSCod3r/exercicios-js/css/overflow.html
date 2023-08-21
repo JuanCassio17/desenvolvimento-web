@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        div {
+            font-size: 40px;
+            height: 100px;
+            width: 260px;
+            border: solid 3px;
+            /* propriedade overflow é para corrigir componentes que estão fora de um componente */
+            overflow: hidden; /* esconde todo conteúdo fora */
+            overflow: scroll; /* atribui elementos de barra de rolagem */
+            /* overflow-x ou y: scroll; somente no eixo x ou y (para cima ou para o lado) */
+            /* overflow-y: hidden; esconde barra em y */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        TudoFuncionaMuitoBemEmCSS!!!
+        Texto muito grande para caber nessa div.
+        Já pensou qual será o comportamento padrão?
+    </div>
+</body>
+</html>
