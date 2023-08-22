@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #02</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+    <script>              
+
+        // selecionando o id. Nesse caso precisa do # para identificar que é o id
+        // o querySelector espera uma propriedade CSS (classe, id, tag, atributo)
+        document.querySelector("#primeiro").classList.add('destaque')
+
+        const selecionar = seletor => 
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+
+        // querySelectorAll não retorna um HTMLCollection, mas sim um NodeList()
+        // somente o foreach() é aceito. Mas vocÇe pode converter com Array.from()
+
+        const deselecionar = seletor =>
+            document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+
+        selecionar('div')
+        deselecionar('*') // seletor universal também pode ser aplicado
+
+        selecionar('.terceiro.ultimo') // selecionando atributo com mais de uma classe
+        deselecionar('*')
+
+        selecionar(':not(#primeiro)') // todos exceto o primeiro
+        deselecionar('*')
+
+        selecionar(':nth-child(1)') // primeiro filho do elemento
+        deselecionar('*')
+
+        selecionar('div:nth-of-type(1)') // primeiro elemento do tipo div
+        deselecionar('*')
+
+        selecionar('[wb-attrib]') // acessando através de um atributo personalizado
+
+
+    </script>
+</body>
+</html>

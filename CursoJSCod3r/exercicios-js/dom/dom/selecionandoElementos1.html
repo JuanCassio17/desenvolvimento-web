@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>              
+        // formas de resgatar elementos
+
+         // por id
+         // classList.add() -> adiciona um novo estilo ou propriedade ao elemento
+         // nesse caso as propriedades estão no arquivo css
+        document.getElementById('primeiro').classList.add('destaque')
+
+        // seleciona todos os elementos. Nesse exemplo vai pegar todas as divs
+        const divs = document.getElementsByTagName('div')
+        // transformando em array
+        // removendo a classe 'destaque' com forEach()
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        const divsArray = [...divs]
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+        // você pode verificar os elementos utilizando dir(ultimosElementos) -> no console do browser
+        // retorno esperado HTMLCollection(1)
+
+        // utilizando for
+        for(let e of ultimosElementos) {
+            e.classList.remove('destaque')
+        }
+
+        // ATENÇÂO -> eles retornam um HTMLCollection e não um array.
+        // é importante converter para um array para acessar as funções
+        // use o Array.from() ou operador spread [...] ou simplesmente iterar com o for
+
+    </script>
+</body>
+</html>

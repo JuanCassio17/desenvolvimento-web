@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Classes</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        Classes
+    </div>
+    <script>
+        const div = document.querySelector('div')
+        const classes = div.classList
+        classes.add('destaque')
+        classes.remove('destaque')
+        classes.toggle('destaque') // se não existir ele adiciona e vice-versa
+
+        // verifica se está contida ou não
+        console.log(classes.contains('destaque')); // retorna true ou false
+
+        // verifica o número de elementos que a classe está contida
+        console.log(classes.length);
+
+        classes.toggle('destaque') // removeu
+        console.log(classes.length); // retorna 0, pois o único tinha a classe foi removido
+
+        classes.add('destaque1')
+        classes.add('destaque2')
+        console.log(classes.length);
+
+        for(let c of classes) {
+            console.log(c);
+        }
+
+        // nesse caso somente o forEach está presente
+        classes.forEach(c => console.log(c))
+
+        // as outras funções só serão aceitas caso seja convertido para array
+
+    </script>
+</body>
+
+</html>
