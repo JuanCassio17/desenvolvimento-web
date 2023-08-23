@@ -37,10 +37,11 @@ cookieButton.addEventListener('click', function(){
   atualizarNumero();
 });
 
-document.addEventListener('keyup', function(){
-  numero = parseInt(contadorMarcador.textContent) + 1;    
-  atualizarNumero();
-});
+// permitir evento dos teclados também
+// document.addEventListener('keyup', function(){
+//   numero = parseInt(contadorMarcador.textContent) + 1;    
+//   atualizarNumero();
+// });
 
 let buttonReiniciar = document.querySelector("#buttonReiniciar");
 buttonReiniciar.addEventListener('click', function() {
