@@ -16,7 +16,6 @@ main {
     
 }
 
-
 .cookie{
     width: 100%;
     height: 95vh;
@@ -36,10 +35,15 @@ main {
     width: 300px;
     cursor: pointer;
     transition: 0.3s;
+    /* animation: spin 60s infinite; */
 }
 
-.cookie img:hover{
+.cookie img:hover {
     width: 310px;
+}
+
+.cookie img:active {
+    width: 350px;
 }
 
 .loja-container {
@@ -54,17 +58,19 @@ main {
 
 .loja {
     width: 300px;
-    background-color: rgb(54, 86, 142);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .loja p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
     margin-right: 15px;
     font-size: 1.5em;
 }
@@ -73,7 +79,7 @@ main {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border: solid rgb(255, 255, 255) 2px;
+    border: solid rgb(0, 0, 0) 2px;
     padding: 5px;
     margin: 5px;
     transition: 0.5s;
@@ -88,7 +94,7 @@ footer {
     display: flex;
     width: 100%;
     height: 5vh;
-    background-color: rgba(255, 130, 130, 0.522);
+    background-color: rgba(255, 130, 130, 0.314);
     color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
@@ -111,4 +117,8 @@ footer {
     background-color: rgb(227, 227, 227);
     padding: 20px;
 }
+
+/* @-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+} */
 
