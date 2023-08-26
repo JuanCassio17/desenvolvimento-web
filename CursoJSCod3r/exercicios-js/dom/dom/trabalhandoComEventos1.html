@@ -9,9 +9,32 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+        <!-- precisa colocar o (event) ao chamar a função no onclick -->
+        <!-- o onclick é uma desvantagem porque você precisa acessar o html para definir os eventos -->
+        <!-- onclick="navegarEm5s(event) -->
+        <a espera-um-pouco href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+        // padrão observer - mais usado na web
+
+        // passar o "e" como parâmetro para acessar as funções
+
+        function navegarEm5s(e){
+            e.preventDefault()
+            console.log('Saindo em 5s...');
+            setTimeout(() => {
+                const link = e.target
+                window.location.href = link.href
+            }, 5000)
+        }
+
+        // chamando o evento direto no javascript
+        // const a = document.querySelector('a')
+        // a.onclick = navegarEm5s
+
+        // com atributo personalizado
+        const a = document.querySelector('[espera-um-pouco]')
+        a.onclick = navegarEm5s
+
     </script>
 </body>
