@@ -17,7 +17,7 @@ const createTask = async (task) => {
     const createdTask = await connection.execute(query, [task], [dateUTC])
      */
     
-    return createTask;
+    return createdTask;
 }
 
 const deleteTask = async (id) => {
