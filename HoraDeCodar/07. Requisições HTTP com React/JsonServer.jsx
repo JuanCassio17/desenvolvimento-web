@@ -63,30 +63,18 @@ const App = () => {
 
     // 1 - Resgatando dados
 
-    // useEffect(async() => {
-
-    //     const res = await fetch(url) // usando o fetch para chamar os dados da API através da url
-
-    //     const data = await res.json() // convertendo os dados em json
- 
-    //     setProducts(data) // passando os dados para variável products em useState()
-
-    // },[]) // por padrão deixa o array vazio
-
-    // melhorando o código useEffect para evitar os warning
-
     useEffect(() => { // o ideal é tirar o async daqui e inserir na função abaixo
         async function fetchData() {
             
-            const res = await fetch(url)
+            const res = await fetch(url) // usando o fetch para chamar os dados da API através da url
             
-            const data = await res.json()
+            const data = await res.json() // convertendo os dados em json
 
-            setProducts(data)
+            setProducts(data) // passando os dados para variável products em useState()
         }
 
         fetchData() // chame a função dentro do useEffect
-    }, [])
+    }, []) // por padrão deixa o array vazio
 
     console.log(products);
 
